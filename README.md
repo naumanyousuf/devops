@@ -1,7 +1,7 @@
 # devops
 ###This page is work in progress .....
 
-## Infrastructure as a Code using TeraForm
+## Infrastructure as a Code using TeraForm (for Google Cloud)
 This folder contains Infrastructure as a Code Terraform samples
 [IaS](https://github.com/naumanyousuf/devops/tree/main/IaC)
 
