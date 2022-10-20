@@ -20,3 +20,9 @@ Objective: Setup Nginx web server with Persistant Volumes over a K8s Cluster (ta
 - [x] Create Nginx Web Server
 - [x] Setup PV and PVC
 - [ ] Deploy on Custer using same PV
+
+
+
+References:
+
+[Terraform Network Module for GCP](https://github.com/terraform-google-modules/terraform-google-network)
