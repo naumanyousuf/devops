@@ -5,6 +5,11 @@
 This folder contains Infrastructure as a Code Terraform samples
 [IaS](https://github.com/naumanyousuf/devops/tree/main/IaC)
 
+- [x] Create VPC Network and 2 Subnets
+- [ ] Create Firewall Rules
+- [ ] Create VM Instances 
+- [ ] Deploy on Custer using same PV
+
 
 ## kubernetes and docker scripts
 
