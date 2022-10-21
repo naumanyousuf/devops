@@ -1,3 +1,12 @@
+# single terraform file for creating Custom Mode VPC Network with 2 different subnet
+#
+#
+# Author: Muhammad Nauman Yousuf
+# Last Modiifed: 21-Oct-22
+# Change Log:
+# 21Oct22 Corrected IP Address range
+
+
 locals {
     #Name of project NOT ID
     project = "qwiklabs-gcp-02-06f3130239d9"
