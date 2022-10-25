@@ -9,7 +9,7 @@
 
 locals {
     #Name of project NOT ID
-    project = "qwiklabs-gcp-02-06f3130239d9"
+    project = "project-name-goes-here"
     region = "1"
 }
 
