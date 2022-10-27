@@ -8,7 +8,7 @@ This folder contains Infrastructure as a Code Terraform samples
 - [x] Create VPC Network and 2 Subnets
 - [ ] Create Firewall Rules
 - [ ] Create VM Instances 
-- [ ] Deploy on Custer using same PV
+- [ ] Create VM instance and mount old storage
 
 
 ## kubernetes and docker scripts
