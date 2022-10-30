@@ -5,7 +5,7 @@
 This folder contains Infrastructure as a Code Terraform samples
 [IaS](https://github.com/naumanyousuf/devops/tree/main/IaC)
 
-- [x] Create VPC Network and 2 Subnets
+- [x] Create (Custom Mode) VPC Network and 2 Subnets
 - [ ] Create Firewall Rules
 - [ ] Create VM Instances 
 - [ ] Create VM instance and mount old storage
