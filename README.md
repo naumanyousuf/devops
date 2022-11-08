@@ -2,12 +2,14 @@
 ###This page is work in progress .....
 
 ## Infrastructure as a Code using TeraForm (for Google Cloud)
-This folder contains Infrastructure as a Code Terraform samples
+This folder contains Infrastructure as a Code  (IaS) Terraform samples
 [IaS](https://github.com/naumanyousuf/devops/tree/main/IaC)
 
-- [x] Create (Custom Mode) VPC Network and 2 Subnets
-- [ ] Create Firewall Rules
-- [ ] Create VM Instances 
+updated - 08-Nov-2022
+
+- [x] Create (Custom Mode) VPC Network and 3 Subnets
+- [x] Create Firewall Rules ICMP, Web and SSH
+- [x] Create VM Instances 
 - [ ] Create VM instance and mount old storage
 
 
