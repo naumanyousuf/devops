@@ -5,13 +5,23 @@
 # 3 - Firewall rule for ICMP, Web and SSH ports in the VPN from any source 0.0.0.0
 # 4 - Create 3 VM Instances with network to VPC in item 1 and one subnet each
 #
+# Fruit for though, Please ensure that your user / service account has enough permission to perform the actions Compute Instance and Networking
 # Change the file name to main.tf
-# change 
-# <Your GCP ProjectID> to your GCP project ProjectID
+# change <Your GCP ProjectID> to your GCP project ProjectID
+#
+# Comments 
+# Hopefully all is working if not just in case I am open to questions 
+# There might be errors similar to which means GCP has not enough resources in a certin region which is very less likely but possible, in that case try creating in other zone/region
 # 
+# "A n1-standard-1 VM instance is currently unavailable in the europe-west3-b zone. Alternatively, you can try your request again with a different VM hardware configuration or at a later time. For more information, see the troubleshooting documentation."
+#
 # Author: Muhammad Nauman Yousuf
+# Email: nauman_yousuf@yahoo.com
 # Last Modiifed: 07-Nov-22
 # Change Log:
+# 8-11-22: 
+#        Updated comments for Auth / Permission related and Error details 
+#        
 
 locals{
     project = "<Your GCP ProjectID>"
@@ -21,7 +31,7 @@ locals{
 
 provider "google" {
 	#Using the Google Cloud Shell it is observed that using absolute path works fine 
-    credentials = ("key.json")
+    #credentials = ("key.json")
     project = local.project
     region = local.region
 }
@@ -50,7 +60,7 @@ module "vpc" {
                 description           = "This subnet is part of main VPN ahsan for Singapore area"
             },
             {
-                subnet_name           = "singapore-1"
+                subnet_name           = "germany-1"
                 subnet_ip             = "49.49.49.0/24"
                 subnet_region         = "europe-west3"
                 subnet_flow_logs      = "false"
@@ -88,6 +98,8 @@ resource "google_compute_firewall" "ahsancorp-fwrule-allow" {
   source_ranges = ["0.0.0.0/0"]
 }
 
+
+#################### VM Instances ####################
 resource "google_compute_instance" "ayaan-instance-1" {
   name         = "ayaan-instance-1"
   machine_type = "n1-standard-2"
