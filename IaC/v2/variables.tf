@@ -2,8 +2,9 @@
 #
 #
 # Author: Muhammad Nauman Yousuf
-# Last Modiifed: 07-Nov-22
+# Last Modiifed: 15-Nov-22
 # Change Log:
+# 15-Nov-22: commented subnets 
 
 
 variable "region" {
@@ -23,7 +24,7 @@ variable "main-vpc" {
   default = "ahsancorp-vpc-2"
 }
 
-
+/****
 variable "subnet-02" {
   default = "singapore-1"
 }
@@ -32,5 +33,4 @@ variable "subnet-02" {
 variable "subnet-02" {
   default = "germany-1"
 }
-
-
+*******/
